@@ -1,0 +1,151 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/*Nav*/
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+}
+
+nav img{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+/*Section*/
+
+#section-inicio{
+    margin: 5%;
+}
+
+#section-inicio h2{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: center;
+    background-image: url(images/kame.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/*Form*/
+
+form{
+    padding-top: 5%;
+}
+
+/*Footer*/
+
+footer{
+    background-color: orange;
+    text-align: center;
+}
+
+
+/*Header*/
+
+#header-personajes{
+    background-image: url(images/goku.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+}
+
+#header-personajes h1{
+    color: white;
+    text-shadow: 5px 5px 5px blue;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+#header-planetas{
+    background-image: url(images/planeta.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+}
+
+#header-planetas h1{
+    color: white;
+    text-shadow: 5px 5px 5px blue;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+/* Planetas Cajas */
+
+#card-container {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 20px; /* Espacio entre cajas*/
+    padding: 20px; 
+}
+
+.caja-css {
+    width: 40%; 
+    border: 2px solid gold; 
+    border-radius: 20px; 
+    overflow: hidden; /* Para que la imagen ni los parrafos se salgan del borde */
+    margin: 15px;
+    text-align: center; /* Centrar contenido */
+}
+
+.caja-css h3 {
+    font-size: 25px;
+    color: black; 
+    margin-top: 10px;
+}
+
+.caja-css p {
+    color: gray;
+    line-height: 1.6; /* Espacio entre líneas */
+    margin: 10px;
+}
+
+
+.caja-css img {
+    width: 100%; 
+    height: 500px; 
+    object-fit: cover; /* Ajusta las imágenes */
+    object-position: top;
+}
+
+/* Botones de cambio de página */
+
+#button-container {
+    display: flex;
+    justify-content: center; 
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 900px){
+
+    #card-container{
+        display: block;
+    }
+
+    .caja-css{
+        width: 90%;
+        margin: 5% auto;
+        display: block;
+    }
+
+}
